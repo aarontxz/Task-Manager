@@ -1,0 +1,12 @@
+{
+  "ids": {
+    "Task": 4
+  },
+  "models": {
+    "Task": {
+      "1": "{\"title\":\"string\",\"description\":\"string\",\"status\":\"string\",\"dueDate\":\"2023-12-07T06:45:01.747Z\",\"id\":1}",
+      "2": "{\"title\":\"job\",\"description\":\"class\",\"status\":\"todo\",\"dueDate\":\"2023-12-07T06:45:01.747Z\",\"id\":2}",
+      "3": "{\"title\":\"string\",\"description\":\"string\",\"status\":\"string\",\"dueDate\":\"2023-12-07T06:54:41.625Z\",\"id\":3}"
+    }
+  }
+}
