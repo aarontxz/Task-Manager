@@ -1,0 +1,142 @@
+:root {
+  --main-background-color: #cffafa;
+  --table-brown: #6370e9;
+  --lightblue-color: lightblue;
+  --lightgreen-color: lightgreen;
+  --button-color: #d9534f;
+  --button-hover-color: #c9302c;
+  --border-color: #ddd;
+  --text-color: #fff;
+}
+
+body {
+  background-color: var(--main-background-color);
+}
+
+.command-box {
+  background-color: var(--table-brown);
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px; 
+}
+
+.task-form {
+  background-color: var(--table-brown);
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px; 
+}
+
+.form-fields {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.tasks-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow-y: auto;
+  background-color: var(--table-brown);
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  width: 95%;
+  background-color: var(--lightblue-color);
+  max-height: 800px;
+  overflow-y: auto;
+}
+
+.task-item {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.task-box {
+  position: relative;
+  border: 2px solid var(--border-color);
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  background-color: var(--lightgreen-color);
+  margin-left: 15px;
+}
+
+.task-box button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: var(--button-color);
+  color: var(--text-color);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#task-id {
+  position: absolute;
+  margin-top: 10px;
+  top: 5px;
+  left: 10px;
+}
+
+#task-due-date {
+  position: absolute;
+  margin-top: 10px;
+  bottom: 5px;
+  right: 10px;
+}
+
+#task-status {
+  margin-bottom: 5px;
+}
+
+#task-title {
+  margin-top: 5px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.delete-button:hover {
+  background-color: var(--button-hover-color);
+}
+
+button {
+  background-color: var(--button-color);
+  color: var(--text-color);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--button-hover-color);
+}

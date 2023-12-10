@@ -53,12 +53,20 @@ module.exports = function(Task) {
       if (err) return callback(err);
       if (!task) return callback(new Error('Task not found'));
 
-      task.updateAttributes(updatedData, function(err, updatedTask) {
+      // Iterate through the keys in updatedData and update only those fields in the task
+      Object.keys(updatedData).forEach(key => {
+        if (key !== 'id') {
+          task[key] = updatedData[key];
+        }
+      });
+
+      task.save(function(err, updatedTask) {
         if (err) return callback(err);
         callback(null, updatedTask);
       });
     });
   };
+
 
   // Delete a task by ID
   Task.deleteTask = function(taskId, callback) {

@@ -1,0 +1,26 @@
+{{page-title "Tasks"}}
+
+<h1>Task Manager</h1>
+
+<TaskForm/>
+
+<CommandBox/>
+
+<h2>List of Tasks</h2>
+
+<div class="tasks-container">
+    <ul class="task-list">
+        {{#each @model as |task|}}
+            <li class="task-item">
+                <div class="task-box">
+                    <p id="task-id"><strong>ID:</strong> {{task.id}}</p>
+                    <p id="task-title"><strong>Title:</strong> {{task.title}}</p>
+                    <p id="task-description"><strong>Description:</strong> {{task.description}}</p>
+                    <p id="task-status"><strong>Status:</strong> {{task.status}}</p>
+                    <p id="task-due-date"><strong>Due Date:</strong> {{task.dueDate}}</p>
+                    <button {{action "deleteTask" task}}>Delete</button>
+                </div>
+            </li>
+        {{/each}}
+    </ul>
+</div>

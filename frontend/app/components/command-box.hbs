@@ -1,0 +1,25 @@
+<!-- app/templates/components/task-form.hbs -->
+
+<div class="command-box">
+    <h2>Update an Existing Task</h2>
+    
+    <label>ID of Task to update:</label>
+    {{input type="ID" placeholder="Enter ID of task to update" value=this.id}}
+
+    <div class="form-fields">
+        <label>Title:</label>
+        {{input type="text" placeholder="Enter title" value=this.title}}
+
+        <label>Description:</label>
+        {{input type="text" placeholder="Enter description" value=this.description}}
+
+        <label>Status:</label>
+        {{input type="text" placeholder="Enter status" value=this.status}}
+
+        <label>Due Date:</label>
+        {{input type="text" placeholder="Enter due date" value=this.dueDate}}
+
+        <button {{action "updateTask"}}> Update </button>
+    </div>
+
+</div>

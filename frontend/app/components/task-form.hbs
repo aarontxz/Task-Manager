@@ -1,0 +1,22 @@
+<!-- app/templates/components/task-form.hbs -->
+
+<div class="task-form">
+  <h2>Add a New Task</h2>
+
+  <div class="form-fields">
+    <label>Title:</label>
+    {{input type="text" placeholder="Enter title" value=this.title}}
+
+    <label>Description:</label>
+    {{input type="text" placeholder="Enter description" value=this.description}}
+
+    <label>Status:</label>
+    {{input type="text" placeholder="Enter status" value=this.status}}
+
+    <label>Due Date:</label>
+    {{input type="text" placeholder="Enter due date" value=this.dueDate}}
+
+    <button {{action "addTask"}}>Add Task</button>
+  </div>
+  
+</div>
