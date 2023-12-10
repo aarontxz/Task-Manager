@@ -2,7 +2,7 @@
 
 ## Project Description
 
-This is a simple to do list application that allows the user to create, read, update and delete tasks using loopback 3 for the backend connected to a PostgreSql database and Ember.js for the frontend.
+This is a simple to do list application that allows the user to create, read, update and delete tasks using loopback 3 for the backend connected to a PostgreSQL database and Ember.js for the frontend.
 
 ## Setup Instructions
 
