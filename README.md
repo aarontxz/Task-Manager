@@ -10,18 +10,20 @@ This is a simple to do list application that allows the user to create, read, up
 
 ### Database (PostgreSQL)
 - set up a PostgreSQL database using `createdb db'
-- create a table called task using
-- `CREATE TABLE task (
+- create a table called task using `CREATE TABLE task (
   id SERIAL PRIMARY KEY,
   title VARCHAR(255) NOT NULL,
-  description VARCHAR(255) NOT NULL,
+  description VARCHAR(255),
   status VARCHAR(255) NOT NULL,
   due_date DATE
 );`
+
+
 ### Backend (Loopback 3)
 
 - Navigate to the backend directory: `cd loopback`
 - Install dependencies: `npm install`
+- edit the datasources.js file in the server folder accordingly to the PostgreSQL database you created.
 - Run the server: `node .`
 
 ### Frontend (EmberJS)
