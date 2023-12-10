@@ -23,6 +23,14 @@ This is a simple to do list application that allows the user to create, read, up
   
 ## Setup Instructions
 
+###Environment Information
+
+ember-cli: 4.6.0
+node: 12.16.2
+loopback: 5.2.0
+PostgreSQL: 14.10 (Homebrew)
+
+
 - Clone the repository: `git clone https://github.com/aarontxz/Task-Manager.git`
 
 ### Database (PostgreSQL)
