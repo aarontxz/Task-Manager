@@ -5,7 +5,7 @@
 This is a simple to do list application that allows the user to create, read, update and delete tasks using loopback 3 for the backend connected to a PostgreSQL database and Ember.js for the frontend.
 
 ## Overview of application
-<img width="895" alt="Screenshot 2023-12-10 at 12 22 26 PM" src="https://github.com/aarontxz/Task-Manager/assets/115057223/6b36c57d-c3fd-4b04-a0af-6327e1f852af">
+<img width="496" alt="Screenshot 2023-12-11 at 3 09 06 AM" src="https://github.com/aarontxz/Task-Manager/assets/115057223/a76a0aa5-1abd-4a37-bd65-4cc194e9b91b">
 
 ## Usage Instructions
 
