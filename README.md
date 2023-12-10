@@ -8,6 +8,16 @@ This is a simple to do list application that allows the user to create, read, up
 
 - Clone the repository: `git clone https://github.com/aarontxz/Task-Manager.git`
 
+### Database (PostgreSQL)
+- set up a PostgreSQL database using `createdb db'
+- create a table called task using
+- `CREATE TABLE task (
+  id SERIAL PRIMARY KEY,
+  title VARCHAR(255) NOT NULL,
+  description VARCHAR(255) NOT NULL,
+  status VARCHAR(255) NOT NULL,
+  due_date DATE
+);`
 ### Backend (Loopback 3)
 
 - Navigate to the backend directory: `cd loopback`
